@@ -1,0 +1,532 @@
+.learn-container {
+    display: flex;
+    flex-direction: row;
+   position: absolute;
+    align-items: center;
+    width: 100%;
+    
+    padding: 0;
+    margin: 0;
+  
+  }
+
+.learn-container5 {
+    display: flex;
+    flex-direction: row;
+   position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 10px;
+    left:-7%;
+    margin-top: -10%;
+    height: 100vh;
+
+    .info3{
+        width: 40%;
+
+        h1{
+            margin-left: 40px;
+        }
+    }
+  
+  }
+
+  .map{
+      width: 130%;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  .learn {
+   
+    position: relative;
+    left: -20px;
+    bottom: -70px;
+    
+    
+  
+    img {
+      height: 50%;
+      width: 80%;
+      
+      
+    }
+  }
+
+  .learn2{
+    position: relative;
+    margin: 40px;
+  }
+  
+  .info {
+    
+    
+    width: 40%;
+  
+   
+  }
+
+
+
+
+.btnwrap-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .btn-wrap {
+        height: 150px;
+        width: 30px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 1%;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .btn:hover{
+            cursor: pointer;
+            background-color: #FCB017;
+        }
+
+        .btn {
+            height: 15px;
+            width: 15px;
+            background-color: #EC1D61;
+            border-radius: 50%;
+        }
+
+        sl-tooltip {
+            --max-width: 300px;
+        }
+
+        sl-tooltip::part(base) {
+            background-color: transparent;
+        }
+    
+    }
+
+}
+
+.learn-container2{
+    display: flex;
+    flex-direction: row;
+   position: absolute;
+    align-items: center;
+    width: 100%;
+    
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .video {
+   
+    position: relative;
+    left: -20px;
+    display: flex;
+    flex-direction: column;
+
+    
+    
+  
+    img {
+      height: 50%;
+      width: 80%;
+      
+      
+    }
+    
+
+
+  }
+
+  .video2 {
+   
+    position: relative;
+    left: -20px;
+    display: flex;
+    flex-direction: column;
+   
+
+    iframe {
+        height: 1000px !important;
+        width: 100%;
+        
+        
+      }
+
+      img {
+        height: 50%;
+        width: 80%;
+        
+        
+      }
+  }
+  
+  .info {
+    
+    
+    width: 40%;
+}
+
+.learn-container3{
+    display: none;
+    flex-direction: row;
+   position: absolute;
+    align-items: center;
+    width: 100%;
+    
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .learn {
+   
+    position: relative;
+    left: -20px;
+    bottom: -70px;
+    
+    
+  
+    img {
+      height: 50%;
+      width: 80%;
+      
+      
+    }
+  }
+  
+  .info {
+    
+    
+    width: 40%;
+}
+
+.arrow2{
+    position: absolute;
+    height: 50px;
+    left: 20%;
+    bottom: 15%;
+    opacity: 0.5;
+}
+
+.learn-container4{
+    display: none;
+    flex-direction: row;
+   position: absolute;
+    align-items: center;
+    width: 100%;
+    
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .learn {
+   
+    position: relative;
+    left: -20px;
+    bottom: -70px;
+    
+    
+  
+    img {
+      height: 50%;
+      width: 80%;
+      
+      
+    }
+  }
+  
+  .info {
+    
+    
+    width: 40%;
+}
+
+.btn-depression {
+    height: 30px;
+    width: 30px;
+    background-color:  #FCB017;
+    border-radius: 50%;
+}
+
+.line-wrap {
+    width: 100%;
+    height: 1%;
+    border-bottom: white 1px solid;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    opacity: 0.4;
+}
+
+.line-wrap2 {
+    width: 100%;
+    height: 1%;
+    border-bottom: white 1px solid;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+    opacity: 0.4;
+}
+
+.video-container {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .vid{
+        height: 90%;
+        width: 30%;
+       
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul{
+            margin-top: -2%;
+            color: white;
+        }
+    }
+}
+
+.video-container2 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .vid{
+        height: 90%;
+        width: 30%;
+       
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul{
+            margin-top: -2%;
+            color: white;
+        }
+    }
+
+    
+}
+
+.video-container3 {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .vid{
+        height: 90%;
+        width: 30%;
+       
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul{
+            margin-top: -2%;
+            color: white;
+        }
+    }
+
+    
+}
+
+.vid2{
+        height: 90%;
+        width: 30%;
+       
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        ul{
+            bottom: 0;
+            color: white;
+            
+        }
+    }
+
+@media all and (max-width: 1024px){ 
+
+    .learn-container2 {
+        flex-direction: column;
+        width: 100%;
+ 
+        height: 100%;
+       
+
+        .video{
+            width: 90%;
+            
+               
+          
+        }
+        
+        .arrow2{
+            position: absolute;
+            margin-top: 2000px;
+            display: none;
+            } 
+
+        
+
+        
+
+       
+    }
+    
+   .info{
+            width: 80%;
+            margin-top: 1%;
+            position: relative;
+            height: 960px;
+        }
+
+    .learn-container5{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .map{
+        width: 250%;
+        left: -65%;
+    }
+    
+
+    
+    .line-wrap{
+            position: absolute;
+            margin-top: 1050px;
+            display: none;
+        }
+
+        .line-wrap2{
+            position: absolute;
+            margin-top: 1050px;
+            display: none;
+        }
+
+        .video-container{
+        margin-top: 360%;
+        flex-direction: column;
+        height: 200%;
+        .vid{
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+    .video-container2{
+        margin-top: 650px;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 50px;
+        .vid{
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+    .learn-container{
+        flex-direction: column;
+    }
+
+    .learn {
+        width: 95%;
+        left: -20%;
+    }
+
+    .info{
+        width: 80%;
+        position: relative;
+        margin-top: 24%;
+    }
+
+    .video-container3{
+        bottom: 0;
+        flex-direction: column;
+        height: 250vh;
+        margin-bottom: 50px;
+        .vid{
+            width: 90%;
+            text-align: center;
+            margin-top: 50px;
+            height: 150%;
+        }
+
+        .vid.vid5{
+            margin-top: 200%;
+        }
+    }
+
+    .vid.vid3 {
+        color: white;
+        margin-top: 80%;
+    }
+
+    .vid.vid4 {
+        color: white;
+        margin-top: 25%;
+    }
+
+
+    .btnwrap-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    
+        .btn-wrap {
+            height: 150px;
+            width: 30px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            right: 2%;
+            align-items: center;
+            justify-content: space-evenly;
+    
+            .btn:hover{
+                cursor: pointer;
+                background-color: #FCB017;
+            }
+    
+            .btn {
+                height: 15px;
+                width: 15px;
+                background-color: #EC1D61;
+                border-radius: 50%;
+            }
+    
+    
+            sl-tooltip::part(base) {
+                background-color: transparent;
+            }
+        
+        }
+    
+    }
+  }

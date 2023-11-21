@@ -1,0 +1,142 @@
+.input-group1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+  margin-top: 10px;
+}
+
+.form-signup2{
+  width: 100%;
+  left: 25%;
+  top: 15%;
+  text-align: left;
+}
+
+
+
+.input::part(base) {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+.des::part(base) {
+    height: 200px;
+
+}
+
+.page-content3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: scroll;
+
+    padding: 1em;
+    &.no-pad {
+      padding: 0;
+    }
+    padding-top: 5%;
+  
+  }
+  
+  .page-content3::-webkit-scrollbar{
+    display: none;
+    overflow-y: hidden;
+  }
+
+  
+  .vibes-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .vibes-grid{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    .vibes-card {
+      width: calc(33.33% - 1em);
+      margin: 0.5em;
+      p{
+        color: var(--body-bg);
+      }
+      h3, h4 {
+        color: var(--body-bg);
+      }
+      h5 {
+        color: rgb(140, 140, 140);
+      }
+      h2 {
+        color: var(--brand-color)
+      }
+   }
+  
+  }
+  
+  //project dialog---------------------------------
+  .vibes-dialog{
+    --width:60%;
+  
+    .h1{
+      font-size: 3em;
+    }
+  }
+  
+  .home-page::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .home-page {
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  // root ---------------
+  #root {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;  
+    overflow: hidden;
+  }
+
+  @media all and (max-width: 1024px){ 
+    .vibes-grid{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 7%;
+      flex-direction: column;
+      
+      .vibes-card {
+        width: 95%;
+
+       
+     }
+    
+    }
+
+    .input-group1 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+     
+    margin-top: 10px;
+  }
+
+  .form-signup2{
+    width: 100%;
+    left: 0;
+    top: 15%;
+    text-align: left;
+  }
+  }

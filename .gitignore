@@ -1,8 +1,2 @@
 node_modules
 .cache
-fonts
-src
-static\images
-info.txt
-package-lock.json
-package.json

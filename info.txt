@@ -1,0 +1,111 @@
+<sl-avatar style="--size: 24px;" image=${(this.user && this.user.avatar) ? `${App.apiBase}/images/${this.user.avatar}` : ''}></sl-avatar> ${this.user && this.user.firstName}
+
+<sl-menu>            
+            <sl-menu-item @click="${() => gotoRoute('/profile')}">Profile</sl-menu-item>
+            <sl-menu-item @click="${() => gotoRoute('/editProfile')}">Edit Profile</sl-menu-item>
+            <sl-menu-item @click="${() => Auth.signOut()}">Sign Out</sl-menu-item>
+          </sl-menu>
+
+            render(){
+    
+    const template = html`
+      <va-app-header title="Home" user=${JSON.stringify(Auth.currentUser)}></va-app-header>
+      
+      ${this.user !== null ? html`
+      <div class="page-content signin-background">
+
+  
+
+        <div class="levels-container">
+          <div class="plant-progress" style="background-image: url('/images/${this.user.level}.png')"></div>
+          <div class="levels-list">
+            ${this.levels !== null ? html`
+              
+              ${this.levels.map(level => html`
+                <div class="level-item ${level.level === this.user.level ? 'active' : ''}">
+                  <h2>${level.level}. ${level.name}</h2>
+                  <p class="description">${level.description}</p>
+                  <ol class="tasks">
+                    ${level.tasks ? html`
+                      ${level.tasks.map((task, index) => html`
+                        <li
+                          class="${this.user.tasksCompleted.includes(index) ? 'completed': ''}"
+                          @click=${() => this.completeTask(index)}
+                        >${task}</li>
+                      `)}                    
+                    `: ``}
+                  </ol>
+                </div>
+              `)}
+            
+            ` : ``}
+          </div>
+          </div>
+          
+        </div>
+
+      </div>
+      `:``}
+      
+     
+    `
+
+/*
+    */
+
+<p class="description">${level.description}</p>
+                  <ol class="tasks">
+                    ${level.tasks ? html`
+                      ${level.tasks.map((task, index) => html`
+                        <li
+                          class="${this.user.tasksCompleted.includes(index) ? 'completed': ''}"
+                          @click=${() => this.completeTask(index)}
+                        >${task}</li>
+                      `)}                    
+                    `: ``}
+                  </ol>
+            
+            
+
+.level-item .tasks li:before {
+        content: '\25cb';
+}
+
+^ THIS AND
+
+.level-item .tasks li.completed:before {
+        content: '\25cf';
+      }        
+^THIS
+
+      .level-item .tasks li.completed {
+        text-decoration: line-through;
+        opacity: 0.5;
+      }
+
+      
+
+
+      .level-item .tasks li.active {
+        transform: scale(1.1);
+        opacity: 1; 
+      }
+
+      .level-item .tasks li.active .description .tasks,
+      .level-item .tasks li.active .tasks {
+          display: block;
+      }
+  
+  
+
+      
+
+      .icons::part(base) {
+        color: #fbdae6;
+        align-items: center;
+        top: 20px;
+      }
+
+      .icons{
+        align-items: center;
+      }
